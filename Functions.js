@@ -474,6 +474,10 @@ $(document).ready(function () {
                 title: "Issue"
             });
             columns.push({
+                data: "ElapseHrMinSec",
+                title: "Elapsed Time"
+            });
+            columns.push({
                 data: "RectificationDate",
                 title: "Rectification Date"
             });
