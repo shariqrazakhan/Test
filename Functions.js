@@ -493,7 +493,7 @@ $(document).ready(function () {
                 data: "ComplaintStatus",
                 title: "Status"
             });
-            buttonArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            buttonArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
         } else {
             columns.push({
                 data: "AssignedUser",
@@ -531,7 +531,7 @@ $(document).ready(function () {
                 data: "Comments",
                 title: "Comment"
             });
-            buttonArray = [0, 1, 2, 3, 4, 5, 6, 7];
+            buttonArray = [0, 1, 2, 3, 4, 5, 6, 7, 8];
         }
 
         table = $('#report_result').DataTable({
