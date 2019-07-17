@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     $('#example1').on('click', '#complaintsAssignBtn', function (e) {
         e.preventDefault();
-        comAssignID = $(this).attr("assignID"); //$(this).closest('tr').find('td:nth-child(1)').find('input[name="ComLogID"]').val();
+        comAssignID = $(this).attr("assignID");
         $("#testModal").modal("show");
         bindcomplaintsAssign();
 
@@ -806,7 +806,7 @@ $(document).ready(function () {
             },
             dataType: 'json',
             success: function (data) {
-                if (data == null) {
+                if (data != null) {
                     $("#TicketNumber").val(data[0].TicketNo);
                     $("#MerchantName").val(data[0].MerchantName);
                     $("#MID").val(data[0].MID);
