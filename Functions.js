@@ -35,6 +35,7 @@ $(document).ready(function () {
     });
 
     $('#example1').on('click', 'a', function () {
+        //debugger;
         var element = $(this);
         comAssignID = $(element).data('id');
         comLogID = comAssignID;
@@ -52,6 +53,11 @@ $(document).ready(function () {
                 $("#myModal").modal("show");
                 PopulateMerchantPopup(comLogID, username);
             }
+        }
+
+        if ($(this).data("show") === "Form") {
+            $("#merchant-complaint-comments-div").hide();
+            $("#merchantComplaintCommentsForm").show();
         }
     });
 
@@ -75,7 +81,6 @@ $(document).ready(function () {
                 $("#FuelLink_complaint_submit").prop('disabled', false);
                 $("#consumerComplaintComments").val("");
                 bindCommenttable();
-
             }
         }
     });
@@ -113,6 +118,8 @@ $(document).ready(function () {
         } else if (customerType == "Merchant") {
             $("#merchant_complaint_submit").prop('enabled', true);
             $("#myModal").modal("show");
+                $("#merchant-complaint-comments-div").show();
+                $("#merchantComplaintCommentsForm").hide();
         }
         if (complaintStatus == "Closed") {
             $("#consumerComplaintComments").prop('disabled', true);
