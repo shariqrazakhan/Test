@@ -576,7 +576,7 @@ $(document).ready(function () {
             }
             ],
             //"paging": true,
-            "ordering": false,
+            "ordering": true,
             "info": true,
             //"pageLength": 10,
             "searching": true
