@@ -577,6 +577,7 @@ $(document).ready(function () {
             ],
             //"paging": true,
             "ordering": true,
+            "order": [[0, "desc"]],
             "info": true,
             //"pageLength": 10,
             "searching": true
