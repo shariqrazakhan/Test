@@ -199,7 +199,8 @@ $(document).ready(function () {
                 bindCommenttable();
                 complaintStatusID = "0";
                 assignToID = "0";
-                rebindtableList();
+                //rebindtableList();
+                $('#example1').DataTable().ajax.reload(null, false);
             }
         });
     });
