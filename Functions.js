@@ -140,6 +140,7 @@ $(document).ready(function () {
     });
 
     $("#SaveComplaint").click(function () {
+        $("#close_confirm_dialog").modal("hide");
         $("#consumer_complaint").modal("show");
         $("#consumer_complaint_submit").prop('disabled', false);
         $("#FuelLink_complaint_submit").prop('disabled', false);
