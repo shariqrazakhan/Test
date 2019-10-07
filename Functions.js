@@ -75,7 +75,7 @@ $(document).ready(function () {
 
             if (this.value == "9") {
                  var userPreference;
-                if (confirm("Do you want to save changes?") == true) {
+                if (confirm("Are you sure you want to Close the complain?") == true) {
                     //userPreference = "Data saved successfully!";
                     $("#consumer_complaint").modal("show");
                     $("#consumer_complaint_submit").prop('disabled', false);
