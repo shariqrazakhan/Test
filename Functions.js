@@ -74,7 +74,18 @@ $(document).ready(function () {
             ShowStatusID = row.find("#ShowStatusID").val();
 
             if (this.value == "9") {
-                $("#close_confirm_dialog").modal("show");
+                 var userPreference;
+                if (confirm("Do you want to save changes?") == true) {
+                    //userPreference = "Data saved successfully!";
+                    $("#consumer_complaint").modal("show");
+                    $("#consumer_complaint_submit").prop('disabled', false);
+                    $("#FuelLink_complaint_submit").prop('disabled', false);
+                    $("#consumerComplaintComments").val("");
+                    bindCommenttable();
+                } else {
+                    //userPreference = "Save Canceled!";
+                }
+                //$("#close_confirm_dialog").modal("show");
             } else {
                 $("#consumer_complaint").modal("show");
                 $("#consumer_complaint_submit").prop('disabled', false);
