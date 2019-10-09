@@ -81,6 +81,7 @@ $(document).ready(function () {
                     $("#consumer_complaint_submit").prop('disabled', false);
                     $("#FuelLink_complaint_submit").prop('disabled', false);
                     $("#consumerComplaintComments").val("");
+                    //$("#rollfield").show();
                     bindCommenttable();
                 } else {
                     //userPreference = "Save Canceled!";
@@ -89,8 +90,9 @@ $(document).ready(function () {
             } else {
                 $("#consumer_complaint").modal("show");
                 $("#consumer_complaint_submit").prop('disabled', false);
-                $("#FuelLink_complaint_submit").prop('disabled', false);
+                $("#FuelLink_complaint_submit").prop('disabled', false);                
                 $("#consumerComplaintComments").val("");
+                //$("#rollfield").hide();
                 bindCommenttable();
             }
         }
@@ -164,6 +166,7 @@ $(document).ready(function () {
         complaintLogID = comLogID;
         userid = username;
         merchantComplaintComments = $("#CommentsForMerchantComplaint").val();
+        rollquantity = $("#RollQuantity").val();
         event.preventDefault();
         $.ajax({
             type: 'Post',
@@ -171,7 +174,8 @@ $(document).ready(function () {
             data: {
                 ComLogId: complaintLogID,
                 UserId: userid,
-                Comment: merchantComplaintComments
+                Comment: merchantComplaintComments,
+                RollQuanity: rollquantity
             },
             dataType: 'json',
             success: function (data) {
