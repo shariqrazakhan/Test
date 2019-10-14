@@ -1013,9 +1013,34 @@ $(document).ready(function () {
         $("#complaintsAssignInfo").modal("show");
     }
 
-
+function myFunction12() {
+  var carName = "Volvo";
+  document.getElementById("demo1").innerHTML =
+  typeof carName + " " + carName;
+}
+    
+    function myFunction13() {
+  var carName = "Volvo";
+  document.getElementById("demo1").innerHTML =
+  typeof carName + " " + carName;
+}
+    
+    function myFunction14() {
+  var carName = "Volvo";
+  document.getElementById("demo1").innerHTML =
+  typeof carName + " " + carName;
+}
+    
+    function myFunction15() {
+  var carName = "Volvo";
+  document.getElementById("demo1").innerHTML =
+  typeof carName + " " + carName;
+}
 
 
 
 })
 //New Version 1.6
+
+
+
