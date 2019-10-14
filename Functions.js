@@ -86,7 +86,7 @@ $(document).ready(function () {
                             $("#RollQuantity").show();
                         }
                         else{
-                            $("#consumerComplaintComments").after("<br/><input name='RollQuantity' placeholder='Enter paper roll quantity here' type='text' class='form-control col-md-7 col-xs-12'/>");
+                            $("#consumerComplaintComments").after("<br/><input name='RollQuantity' id='RollQuantity' placeholder='Enter paper roll quantity here' type='text' class='form-control col-md-7 col-xs-12'/>");
                             rollfield = 1;
                         }
                     }
