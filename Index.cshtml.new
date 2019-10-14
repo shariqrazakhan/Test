@@ -1,0 +1,86 @@
+﻿<style type="text/css">
+    table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+    }
+
+    .tableizer-table th {
+        background-color: #104E8B;
+        color: #FFF;
+        font-weight: bold;
+    }
+</style>
+<table class="tableizer-table">
+    <thead><tr class="tableizer-firstrow"><th></th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead>
+    <tbody>
+        <tr><td> PUBLIC SECTOR BANKS </td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>1</td><td>First Women Bank Limited</td><td>(021)111-113-925 0331-3925111</td><td>complaint.management@fwbl.com.pk</td><td>Complaint Management Unit, Marketing & Service Quality Division First Women Bank Limited, Head Office, S.T.S.M Foundation Building CL/10/20/2, Beaumont Road Civil Lines, Off Dr. Ziauddin Ahmed Road Karachi – 75530</td></tr>
+        <tr><td>2</td><td>National Bank of Pakistan</td><td>111-627-627</td><td>cmw.sqd@nbp.com.pk</td><td>Complaint Management Division National Bank of Pakistan 7th Floor, Head Office Karachi</td></tr>
+        <tr><td>3</td><td>Sindh Bank Limited</td><td>0800-33322 +92-21-38694999 (International)</td><td>complaints@sindhbankltd.com</td><td>CUSTOMERS COMPLAINTS UNIT First Floor, P & O Plaza, Opposite I.I. Chundrigar Road, Karach</td></tr>
+        <tr><td>4</td><td>The Bank of Khyber</td><td>(021) 111-265-265  CMU direct No 091-5253867</td><td>complaints@bok.com.pk</td><td>Complaint Management Unit Service Quality Department Bok Head Office State life Building Ground floor Peshawar cantt</td></tr>
+        <tr><td>5</td><td>The Bank of Punjab</td><td>(042) 111-267-200</td><td> complaints@bop.com.pk</td><td>MM Tower Gulberg, Lahore</td></tr>
+        <tr><td>SPECIALIZED BANKS </td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>7</td><td>SME Bank Limited</td><td>0800-00888</td><td>info@smebank.org</td><td>56F Nazimudin Road, Blue Area, Islamabad</td></tr>
+        <tr><td>8</td><td>The Punjab Provincial Cooperative Bank Ltd</td><td>111-772-250</td><td>ask.us@ppcbl.com.pk</td><td>&nbsp;</td></tr>
+        <tr><td>9</td><td>Zarai Taraqiati Bank Limited</td><td>(051)0800-14001</td><td>insp.comp@ztbl.com.pk</td><td>SVP, Inspection & Complaints Department, ZTBL, HO, Islamabad</td></tr>
+        <tr><td>PRIVATE BANKS </td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>10</td><td>Allied Bank Limited</td><td>(021,042,051) 111-225-225</td><td>complaint.management@abl.com</td><td>&nbsp;</td></tr>
+        <tr><td>11</td><td>Askari Bank Limited</td><td>(021,051) 111-000-787</td><td>support@askaribank.com.pk customerservices@askaribank.com.pk</td><td>Manager Complaint Unit Askari Bank Limited Head Office, 1st Floor, NPT Building Plot No. 18, F8 Markaz, Islamabad.</td></tr>
+        <tr><td>12</td><td>Bank Alfalah Limited</td><td>(021) 0800-22225 / 111-225-111</td><td>contactus@bankalfalah.com</td><td>&nbsp;</td></tr>
+        <tr><td>13</td><td>Bank Al Habib Limited</td><td>111-014-014</td><td>feedback@bankalhabib.com</td><td>Customer Services Division, Bank AL Habib 4th Floor, Plot 30C, KhayabaneShahbaz PhaseVI, DHA, Karachi</td></tr>
+        <tr><td>14</td><td>Faysal Bank Limited </td><td>(021) 111 06 06 06</td><td>customercomplaint@faysalbank.com</td><td>Faysal House ST02 Shahrae Faisal Karachi</td></tr>
+        <tr><td>15</td><td>Habib Bank Limited</td><td>(021) 111-111-425</td><td>customer.complaints@hbl.com​​​​​ customer.care@hbl.com</td><td>Service Quality, 9th Floor, HBL Plaza, I I Chundrigar Road, Karachi</td></tr>
+        <tr><td>16</td><td>Habib Metropolitan Bank Limited</td><td>0800 422 42 /111 142 242</td><td>complaints@habibmetro.com</td><td>HabibMetro Bank Mezzanine Floor Spencers Building I.I Chundrigar Road Karachi</td></tr>
+        <tr><td>17</td><td>JS Bank Limited</td><td>080001122, 080078900, 080000010</td><td>pru.helpdesk@jsbl.com</td><td>JS Bank Limited Shaheen Commercial Complex Dr. Zia Uddin Ahmed Road Karachi & Manager Problem Resolution Problem Resolution Unit, JS Bank Limited, Plot # SR 6/10 (Frere Road), Office # 7A, 7th Floor,Fakhri Trade Center, ShahraeLiaqat, Karachi</td></tr>
+        <tr><td>18</td><td>MCB Bank Limited</td><td>(021) 111-000-622 0800-62272</td><td>info@mcb.com.pk</td><td>Complaint Resolution Unit, Service Quality Division, 20th Floor, MCB Tower, I.I Chundrigar Road, Karachi – 74000 Fax: +92 21 35643215</td></tr>
+        <tr><td>20</td><td>SAMBA Bank Limited</td><td>111 172 622</td><td>SambaCare@samba.com.pk</td><td>Ground Floor, Arif Habib House,23, Maulvi Tamizuddin Khan (M.T. Khan) Road, Karachi</td></tr>
+        <tr><td>21</td><td>SILKBANK Limited</td><td>111-100-777</td><td>info@silkbank.com.pk </td><td>&nbsp;</td></tr>
+        <tr><td>22</td><td>Soneri Bank Limited</td><td>111-766-374</td><td>complaint.suggestion@soneribank.com</td><td>Soneri Bank, Service Quality Dept., 1st floor, AlRahim Tower, I.I. Chundrigar Road, Karachi</td></tr>
+        <tr><td>23</td><td>Standard Chartered Bank (Pakistan) Limited</td><td>(021,042) 111-002-002 (021)111722723</td><td>ask.us@sc.com Complaints.Pakistan@sc.com</td><td>"Standard Chartered Bank (Pakistan) Limited New Jublee Insurance House I.I Chundrigar Road Karachi 74000 Pakistan</td></tr>
+        <tr><td>24</td><td>Summit Bank Limited</td><td>For local Customers 021111124365 / For Intrenational +9221 32463516 </td><td>complaints@summitbank.com.pk</td><td>Complaint Resolution & Management Unit, Summit Bank Limited. Service Quality Department, Bakht Tower ,12th Floor, Plot No. G2,Block 2, Clifton Karachi</td></tr>
+        <tr><td>25</td><td>United Bank Limited</td><td>111-825-888</td><td>customer.services@ubl.com.pk</td><td> 1st Floor, UBL Contact Center & Customer Care Stationary & Warehouse Building Opps. to US Embassy Karachi, Pakistan</td></tr>
+        <tr><td>ISLAMIC BANKS </td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>26</td><td>AlBaraka Bank (Pakistan) Limited</td><td>111-113-442</td><td>complaints@albaraka.com.pk</td><td>Al Baraka Bank (Pakistan) Limited, 3rd Floor, Plot No.11C, Zamzama Boulevard, Phase V, DHA, Karachi, Pakistan</td></tr>
+        <tr><td>27</td><td>BankIslami Pakistan Limited</td><td>111-475-264</td><td> contact.center@bankislami.com.pk</td><td>BankIslami Head Office Executive Tower 14th Floor or Complaint Resolution Unit, II Chundrigar Road, Capital Plaza 3rd Floor.</td></tr>
+        <tr><td>28</td><td>Dubai Islamic Bank Pakistan Limited</td><td> 111-786-342</td><td> problem.resolution@dibpak.com</td><td>Problem Resoluion Unit, 3rd Floor , CL5,6/2 Civil Lines Karachi.</td></tr>
+        <tr><td>29</td><td>Meezan Bank Limited</td><td>111-331-331/332</td><td>complaints@meezanbank.com</td><td>Service Quality Departement Meezan House, C25, Estate Avenue,SITE, Karachi, Pakistan</td></tr>
+        <tr><td>30</td><td>MCB Islamic </td><td>042-111-222-642 </td><td>service.quality@mcbislamicbank.com, info@mcbislamicbank.com</td><td>MCB Islamic Bank Ltd. 2nd Floor, Block 10A,GulshaneIqbal, Main Rashid Minhas Road Karachi</td></tr>
+        <tr><td>FOREIGN BANKS </td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>31</td><td>Citibank N.A. - Pakistan Operations</td><td>(021) 111-777-777</td><td>pak.complaints@citi.com</td><td>&nbsp;</td></tr>
+        <tr><td>32</td><td>Deutsche Bank AG - Pakistan Operations</td><td>111 555 777</td><td>No Email address</td><td>&nbsp;</td></tr>
+        <tr><td>33</td><td>Industrial and Commercial Bank of China Limited - Pakistan Branches</td><td>35208988</td><td>No Email address</td><td>&nbsp;</td></tr>
+        <tr><td>34</td><td>The Bank of Tokyo-Mitsubishi UFJ Limited - Pakistan Operations</td><td>3263-0171</td><td>complaints@tls.pk.mufg.jp</td><td>&nbsp;</td></tr>
+		<tr><td>34</td><td>Bank of China</td><td>(021) 33110688 Ext.695/690</td><td>klqyyb@mail.notes.bankofchina.com</td><td>&nbsp;</td></tr>
+        <tr><td> MICRO FINANCE BANKS / INSTITUTIONS</td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>35</td><td>FINCA Microfinance Bank Limited</td><td>(042) 111-111-562</td><td>complaints@finca.org.pk</td><td>36B Commercial Zone, XX Block KhayabaneIqbal, DHA Phase III, Lahore</td></tr>
+        <tr><td>36</td><td>Khushhali Bank Limited</td><td>051 111-047-047</td><td>complaints@kb.com.pk</td><td>Khushhali Microfinance Bank Ltd, Complaint Cell, Plot No. 55C Ufone Tower, 7th Floor, Jinnah Avenue Blue Area, Islamabad.</td></tr>
+        <tr><td>37</td><td>APNA Microfinance Bank Limited</td><td>042-111-771-772 </td><td>complaints@apnabank.com.pk</td><td>&nbsp;</td></tr>
+        <tr><td>38</td><td>NRSP Microfinance Bank Limited</td><td>Toll Free: 08000NRSP (6777) UAN: (062) 111- 011-011</td><td>complaints@nrspbank.com</td><td>Centralized Complaint Management Cell, NRSP Microfinance Bank Limited, University Road, Bahawalpur</td></tr>
+        <tr><td>39</td><td>Pak Oman Microfinance Bank Limited</td><td>021 35630941-4 </td><td>info@pomicro.com</td><td>&nbsp;</td></tr>
+        <tr><td>40</td><td>U Microfinance Bank Limited</td><td>051 111-282-265 /7777/8265</td><td>complaints@ubank.com.pk</td><td>&nbsp;</td></tr>
+        <tr><td>41</td><td>Tameer Micro Finance Bank Limited</td><td>(021) 111-826-337</td><td>complaints@telenorbank.pk</td><td>Telenor Microfinance Bank Ltd 15A Block 78 Central Commercial Area, K.C.H.S Union 75350, Karachi, Pakistan</td></tr>
+        <tr><td>42</td><td>Mobilink Microfinance Bank Limited</td><td>051111001344 051111124444 051111962962</td><td>complaints@mobilinkbank.com</td><td>Service Quality Department Head Office Mobilink Microfinance Bank Ltd 3A/2 Kaghan Road F8 Markaz Islamabad</td></tr>
+        <tr><td>43</td><td>ADVANS Pakistan Microfinance Bank Limited</td><td>111-238-267</td><td>customerservices@advanspakistan.com</td><td>Advans Pakistan Microfinance Bank Limited Bahria Complex 1, M.T. Khan Road, Lalazar Area, Karachi – Pakistan</td></tr>
+        <tr><td>44</td><td>The First Microfinance Bank</td><td>0800-34778</td><td>complaints@mfb.com.pk</td><td>Manager Complaint Manangement unit, The First MicroFinance Bank 17th Floor, HBL Tower ,Head Office Islamabad</td></tr>
+        <tr><td>45</td><td>Sindh Microfinance Bank</td><td>021-34168125</td><td>info@sindhmfb.com</td><td>&nbsp;</td></tr>
+        <tr><td> DEVELOPMENT FINANCE INSTITUTIONS</td><td>&nbsp;</td><td>Helpline Numbers</td><td>Complaint Email </td><td>&nbsp;</td></tr>
+        <tr><td>46</td><td>House Building Finance Company Limited</td><td>0800 42325</td><td>mailto@hbfcl.com</td><td>&nbsp;</td></tr>
+        <tr><td>47</td><td>Pak Brunei investment Company Limited</td><td>21-35361215-19</td><td>sultan.abid@pakbrunei.com.pk</td><td>&nbsp;</td></tr>
+        <tr><td>48</td><td>Pak-China Investment Company Limited</td><td>051-2099666</td><td>customer.complaint@pakchinainvest.com</td><td>&nbsp;</td></tr>
+        <tr><td>49</td><td>PAIR Investment Company Limited</td><td>21 3582-9621 (4 Lines) </td><td>info@pairinvestment.com</td><td>&nbsp;</td></tr>
+        <tr><td>50</td><td>Pakistan Kuwait Investment Company Limited</td><td> 111-611-611</td><td>info@pkic.com</td><td>&nbsp;</td></tr>
+        <tr><td>51</td><td>Pak Libya Holding Company Limited</td><td>111-111-115</td><td>info@paklibya.com.pk</td><td>&nbsp;</td></tr>
+        <tr><td>52</td><td>Pak Oman Investment Company Limited</td><td>21-35630971 to 75</td><td>info@pakoman.com</td><td>&nbsp;</td></tr>
+        <tr><td>53</td><td>Saudi Pak Industrial & Agricultural Investment Company Limited</td><td>111-222-003</td><td>saudipak.khi@saudipak.com</td><td></td></tr>
+    
+    </tbody>
+    
+</table>
+<hr /><hr /><hr /><hr /><hr /><hr />
