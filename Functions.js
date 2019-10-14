@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var rollfield=0;
+    var rollfield = 0;
 
     $("#FuelLinkComplaintCommentsForm").submit(function (event) {
         complaintLogID = comLogID;
@@ -49,15 +49,15 @@ $(document).ready(function () {
                 $("#consumer_info").modal("show");
                 PopulateConsumerPopup(comLogID, username);
             } else if (customerType == "Merchant") {
-                $("#merchant_complaint_submit").prop('enabled', true);
+                //$("#merchant_complaint_submit").prop('enabled', true);
                 $("#myModal").modal("show");
                 PopulateMerchantPopup(comLogID, username);
             }
         }
 
         if ($(this).data("show") === "Form") {
-            $("#merchant-complaint-comments-div").hide();
-            $("#merchantComplaintCommentsForm").show();
+            //$("#merchant-complaint-comments-div").hide();
+            //$("#merchantComplaintCommentsForm").show();
         }
     });
 
@@ -74,40 +74,59 @@ $(document).ready(function () {
             ShowStatusID = row.find("#ShowStatusID").val();
 
             if (this.value == "9") {
-                 var userPreference;
+                var userPreference;
                 if (confirm("Are you sure you want to Close the complain?") == true) {
                     //userPreference = "Data saved successfully!";
-                    $("#consumer_complaint").modal("show");
-                    $("#consumer_complaint_submit").prop('disabled', false);
-                    $("#FuelLink_complaint_submit").prop('disabled', false);
-                    $("#consumerComplaintComments").val("");
-                    if (company == "SHELL"){
-                        if(rollfield){
-                            $("#RollQuantity").show();
+                    if (customerType == "Merchant") {
+                        $("#merchantComplaintCommentsForm")[0].reset();
+                        $("#merchant_complaint_submit").prop('disabled', false);
+                        $("#save_comment_result_merchant").empty();
+                        $("#save_comment_result_merchant").removeClass("alert-success");
+                        $("#merchantComplaint").modal("show");
+                        if (company == "SHELL") {
+                            if (rollfield) {
+                                $("#RollQuantity").show();
+                            }
+                            else {
+                                $("#CommentsForMerchantComplaint").after("<br/><input name='RollQuantity' id='RollQuantity' placeholder='Enter paper roll quantity here' type='text' class='form-control col-md-7 col-xs-12'/>");
+                                rollfield = 1;
+                            }
                         }
-                        else{
-                            $("#consumerComplaintComments").after("<br/><input name='RollQuantity' id='RollQuantity' placeholder='Enter paper roll quantity here' type='text' class='form-control col-md-7 col-xs-12'/>");
-                            rollfield = 1;
+                        else {
+                            $("#RollQuantity").hide();
                         }
                     }
-                    else{
-                        $("#RollQuantity").hide();
+                    else {
+                        $("#consumer_complaint").modal("show");
+                        $("#consumer_complaint_submit").prop('disabled', false);
+                        $("#FuelLink_complaint_submit").prop('disabled', false);
+                        $("#consumerComplaintComments").val("");
                     }
-                    //$("#rollfield").show();
-                    bindCommenttable();
                 } else {
                     //userPreference = "Save Canceled!";
                 }
                 //$("#close_confirm_dialog").modal("show");
             } else {
-                $("#RollQuantity").hide();
-                $("#consumer_complaint").modal("show");
-                $("#consumer_complaint_submit").prop('disabled', false);
-                $("#FuelLink_complaint_submit").prop('disabled', false);                
-                $("#consumerComplaintComments").val("");
-                //$("#rollfield").hide();
-                bindCommenttable();
+                if (customerType == "Merchant") {
+                    $("#merchant_complaint_submit").prop('disabled', false);
+                    $("#merchantComplaintCommentsForm")[0].reset();
+                    $("#save_comment_result_merchant").empty();
+                    $("#save_comment_result_merchant").removeClass("alert-success");
+
+                    $("#RollQuantity").hide();
+                    $("#merchantComplaint").modal("show");
+                }
+                else {
+                    $("#RollQuantity").hide();
+                    $("#consumer_complaint").modal("show");
+                    $("#consumer_complaint_submit").prop('disabled', false);
+                    $("#FuelLink_complaint_submit").prop('disabled', false);
+                    $("#consumerComplaintComments").val("");                    
+                }
+
+
             }
+            bindCommenttable();
         }
     });
 
@@ -142,10 +161,13 @@ $(document).ready(function () {
             $("#save_comment_result").removeClass("alert-success");
 
         } else if (customerType == "Merchant") {
-            $("#merchant_complaint_submit").prop('enabled', true);
-            $("#myModal").modal("show");
-                $("#merchant-complaint-comments-div").show();
+            if (commentsdisable) {
                 $("#merchantComplaintCommentsForm").hide();
+            }
+            $("#merchant_complaint_submit").prop('enabled', true);
+            $("#merchantComplaint").modal("show");
+            //$("#merchant-complaint-comments-div").show();
+            //$("#merchantComplaintCommentsForm").hide();
         }
         if (complaintStatus == "Closed") {
             $("#consumerComplaintComments").prop('disabled', true);
@@ -157,7 +179,6 @@ $(document).ready(function () {
             $("#FuelLink_complaint_submit").prop('disabled', false);
             $("#consumerComplaintComments").focus();
         }
-
         bindCommenttable();
     });
 
@@ -188,14 +209,17 @@ $(document).ready(function () {
                 ComLogId: complaintLogID,
                 UserId: userid,
                 Comment: merchantComplaintComments,
+                ComplaintStatusId: complaintStatusID,
+                CurrentStatusId: ShowStatusID,
                 RollQuantity: rollquantity
             },
             dataType: 'json',
             success: function (data) {
                 $("#merchant_complaint_submit").prop('disabled', true);
-                bindCommenttable();
                 $("#save_comment_result_merchant").html(data);
                 $("#save_comment_result_merchant").addClass("alert alert-success");
+                bindCommenttable();
+                $('#example1').DataTable().ajax.reload(null, false);
             }
         });
 
@@ -529,10 +553,14 @@ $(document).ready(function () {
                 title: "Jazz Ticket #"
             });
             columns.push({
+                data: "RollQuantity",
+                title: "RollQuantity"
+            })
+            columns.push({
                 data: "ComplaintStatus",
                 title: "Status"
             });
-            buttonArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+            buttonArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
         } else {
             columns.push({
                 data: "TicketNo",
@@ -891,7 +919,7 @@ $(document).ready(function () {
         if (customerType == "Consumer")
             tableType = "#tblConsumerComment";
         else if (customerType == "Merchant")
-            tableType = "#tblComment";
+            tableType = "#tblMerchantComment";
         table = $(tableType).DataTable({
             language: {
                 sLoadingRecords: '<span style="width:100%;"><img src="/Content/ajaxload.gif"></span>'
@@ -1013,34 +1041,4 @@ $(document).ready(function () {
         $("#complaintsAssignInfo").modal("show");
     }
 
-function myFunction12() {
-  var carName = "Volvo";
-  document.getElementById("demo1").innerHTML =
-  typeof carName + " " + carName;
-}
-    
-    function myFunction13() {
-  var carName = "Volvo";
-  document.getElementById("demo1").innerHTML =
-  typeof carName + " " + carName;
-}
-    
-    function myFunction14() {
-  var carName = "Volvo";
-  document.getElementById("demo1").innerHTML =
-  typeof carName + " " + carName;
-}
-    
-    function myFunction15() {
-  var carName = "Volvo";
-  document.getElementById("demo1").innerHTML =
-  typeof carName + " " + carName;
-}
-
-
-
 })
-//New Version 1.6
-
-
-
