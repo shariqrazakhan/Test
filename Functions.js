@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    var rollfield=0;
 
     $("#FuelLinkComplaintCommentsForm").submit(function (event) {
         complaintLogID = comLogID;
@@ -81,6 +81,18 @@ $(document).ready(function () {
                     $("#consumer_complaint_submit").prop('disabled', false);
                     $("#FuelLink_complaint_submit").prop('disabled', false);
                     $("#consumerComplaintComments").val("");
+                    if (company == "SHELL"){
+                        if(rollfield){
+                            $("#RollQuantity").show();
+                        }
+                        else{
+                            $("#consumerComplaintComments").after("<br/><input name='RollQuantity' placeholder='Enter paper roll quantity here' type='text' class='form-control col-md-7 col-xs-12'/>");
+                            rollfield = 1;
+                        }
+                    }
+                    else{
+                        $("#RollQuantity").hide();
+                    }
                     //$("#rollfield").show();
                     bindCommenttable();
                 } else {
@@ -88,6 +100,7 @@ $(document).ready(function () {
                 }
                 //$("#close_confirm_dialog").modal("show");
             } else {
+                $("#RollQuantity").hide();
                 $("#consumer_complaint").modal("show");
                 $("#consumer_complaint_submit").prop('disabled', false);
                 $("#FuelLink_complaint_submit").prop('disabled', false);                
@@ -194,6 +207,7 @@ $(document).ready(function () {
         complaintLogID = comLogID;
         userid = username;
         consumerComplaintComments = $("#consumerComplaintComments").val();
+        rollquantity = $("#RollQuantity").val();
         event.preventDefault();
 
         $.ajax({
@@ -205,7 +219,8 @@ $(document).ready(function () {
                 Comment: consumerComplaintComments,
                 AssignToId: assignToID,
                 ComplaintStatusId: complaintStatusID,
-                CurrentStatusId: ShowStatusID
+                CurrentStatusId: ShowStatusID,
+                RollQuantity: rollquantity
             },
             dataType: 'json',
             success: function (data) {
