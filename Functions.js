@@ -188,7 +188,7 @@ $(document).ready(function () {
                 ComLogId: complaintLogID,
                 UserId: userid,
                 Comment: merchantComplaintComments,
-                RollQuanity: rollquantity
+                RollQuantity: rollquantity
             },
             dataType: 'json',
             success: function (data) {
