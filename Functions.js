@@ -1018,3 +1018,4 @@ $(document).ready(function () {
 
 
 })
+//New Version 1.6
