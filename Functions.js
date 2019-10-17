@@ -1,5 +1,10 @@
 $(document).ready(function () {
     var rollfield = 0;
+    
+    var table = $('#example1').DataTable();
+    $('#source').on('keyup', function () {
+        table.column(8).search(this.value).draw();
+    });
 
     $("#FuelLinkComplaintCommentsForm").submit(function (event) {
         complaintLogID = comLogID;
