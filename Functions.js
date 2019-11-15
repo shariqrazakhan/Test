@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var rollfield = 0;
-    
+
     var table = $('#example1').DataTable();
     $('#source').on('keyup', function () {
         table.column(8).search(this.value).draw();
@@ -29,6 +29,27 @@ $(document).ready(function () {
                 //rebindtableList();
             }
         });
+    });
+
+    $("#search_complaints_form").submit(function (event) {
+        debugger;
+        event.preventDefault();
+        search_type = $("#search_type").val();
+        if (search_type == "Date") {
+            search_value = fromDate + "@" + toDate;            
+        }
+        else {            
+            search_value = $("#search_value").val();
+            if (search_value == '') {
+                alert("Please type in Search Box to find " + search_type + " in database");
+                return;
+            }
+            if (search_type == '') {
+                alert("Please select the type you want to search");
+                return;
+            }
+        }
+        rebindtableList();
     });
 
     $('#example1').on('click', '#complaintsAssignBtn', function (e) {
