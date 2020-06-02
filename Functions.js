@@ -172,6 +172,7 @@ $(document).ready(function () {
                             //rebindtableList();
                             $('#example1').DataTable().ajax.reload(null, false);
                             alert(data);
+                            console.log("Complaint Status Changed : " + data);
                         }
                     });
                 }
