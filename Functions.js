@@ -143,14 +143,38 @@ $(document).ready(function () {
                     $("#merchantComplaint").modal("show");
                 }
                 else {
-                    $("#RollQuantity").hide();
-                    $("#consumer_complaint").modal("show");
-                    $("#consumer_complaint_submit").prop('disabled', false);
-                    $("#FuelLink_complaint_submit").prop('disabled', false);
-                    $("#consumerComplaintComments").val("");                    
+                    //$("#RollQuantity").hide();
+                    //$("#consumer_complaint").modal("show");
+                    //$("#consumer_complaint_submit").prop('disabled', false);
+                    //$("#FuelLink_complaint_submit").prop('disabled', false);
+                    //$("#consumerComplaintComments").val("");
+                    $.ajax({
+                        type: 'Post',
+                        url: "/CMS/SaveComplaintCommentChanges",
+                        data: {
+                            ComLogId: comLogID,
+                            UserId: username,
+                            Comment: "",
+                            AssignToId: assignToID,
+                            ComplaintStatusId: complaintStatusID,
+                            CurrentStatusId: ShowStatusID,
+                            RollQuantity: ""
+                        },
+                        dataType: 'json',
+                        success: function (data) {
+                            //$("#consumer_complaint_submit").prop('disabled', true);
+                            //$("#save_comment_result").html(data);
+                            //$("#save_comment_result").addClass("alert alert-success");
+                            
+                            //bindCommenttable();
+                            complaintStatusID = "0";
+                            assignToID = "0";
+                            //rebindtableList();
+                            $('#example1').DataTable().ajax.reload(null, false);
+                            alert(data);
+                        }
+                    });
                 }
-
-
             }
             bindCommenttable();
         }
