@@ -590,6 +590,10 @@ $(document).ready(function () {
             columns.push({
                 data: "ElapseHrMinSec",
                 title: "Elapsed Time"
+            }); 
+            columns.push({
+                data: "RemainingHrMinSec",
+                title: "Remaining Time"
             });
             columns.push({
                 data: "RectificationDate",
